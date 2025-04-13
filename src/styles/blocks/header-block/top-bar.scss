@@ -1,0 +1,70 @@
+.top-bar {
+  padding-block: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__dropdown {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-link {
+    display: flex;
+  }
+
+  &__logo {
+    height: 28px;
+
+    @include hover(transform, scale(1.2));
+  }
+
+  &__icon {
+    display: flex;
+    box-sizing: border-box;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+
+    @include hover(transform, scale(1.2));
+
+    &--menu {
+      display: block;
+      padding: 6px 2px;
+      width: 18px;
+      height: 8px;
+    }
+  }
+
+  &__link {
+    display: block;
+    height: 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+
+    @include hover(transform, scale(1.2));
+
+    &::after {
+      position: absolute;
+      width: 100%;
+      content: '';
+      bottom: 0;
+      left: 0;
+      background-color: #2060f6;
+      height: 2px;
+    }
+  }
+}

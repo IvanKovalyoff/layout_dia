@@ -11,6 +11,8 @@
   }
 
   &__input {
+    all: unset;
+
     box-sizing: border-box;
     display: block;
     margin: 0;
@@ -50,6 +52,8 @@
   }
 
   &__button {
+    all: unset;
+
     box-sizing: border-box;
     display: block;
     margin: 0;

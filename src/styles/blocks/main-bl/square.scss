@@ -18,17 +18,25 @@
 
   &__square {
     grid-column: 1/-1;
-    justify-self: center;
 
     @include on-tablet {
       grid-column: span 1;
-      justify-self: end;
+    }
+
+    @include on-small-desktop {
+      justify-self: right;
     }
 
     &--to-top {
+      grid-column: 1/-1;
+
       @include on-tablet {
+        grid-column: span 1;
         transform: translateY(-50%);
-        justify-self: start;
+      }
+
+      @include on-small-desktop {
+        justify-self: left;
       }
     }
   }
@@ -40,16 +48,15 @@
   flex-direction: column;
   margin: 0;
   padding: 32px;
-  width: 280px;
   background-color: #fff;
   box-shadow: 0 9px 18px 0 #25293108;
   border-radius: 16px;
 
-  @include hover(transform, scale(1.1));
-
-  @include on-tablet {
+  @include on-small-desktop {
     width: 264px;
   }
+
+  @include hover(transform, scale(1.1));
 
   &__number {
     display: block;

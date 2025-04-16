@@ -16,10 +16,11 @@
   list-style: none;
 
   &__link {
+    display: block;
+    margin: 0;
+    padding: 0;
     color: #253757;
     text-decoration: none;
-
-    @include hover(transform, scale(1.2));
   }
 }
 
@@ -53,7 +54,7 @@
   }
 
   &__content {
-    width: max-content; /* Content should not be limited */
+    width: max-content;
 
     position: absolute;
     margin-top: 10px;

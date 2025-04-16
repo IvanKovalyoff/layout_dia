@@ -1,8 +1,8 @@
 'use strict';
 
-const dropdowns = document.querySelector('.dropdown');
-const trigger = dropdowns.querySelector(`.dropdown__trigger`);
+const dropdown = document.querySelector('.dropdown');
+const trigger = dropdown.querySelector(`.dropdown__trigger`);
 
 trigger.addEventListener('click', () => {
-  dropdowns.classList.toggle('dropdown--active');
+  dropdown.classList.toggle('dropdown--active');
 });

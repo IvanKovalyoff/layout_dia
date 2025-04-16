@@ -6,6 +6,8 @@
   margin: 0;
   grid-column: 1/-1;
 
+  overflow: hidden;
+
   @include on-tablet {
     grid-column: 1/5;
   }
@@ -36,11 +38,11 @@
 
   &__link {
     box-sizing: border-box;
-    display: block;
+    display: flex;
     margin: 0;
     padding: 0;
     margin-bottom: 40px;
-    transform-origin: left center;
+    transform-origin: left;
 
     @include hover(transform, scale(1.2));
 

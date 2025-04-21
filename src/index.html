@@ -42,7 +42,8 @@
     <header class="header">
       <div class="header__content">
         <div class="top-bar">
-          <div class="top-bar__dropdown">
+          <div class="top-bar__logo-menu">
+            <div class="top-bar__logo"></div>
             <a
               href="#"
               class="top-bar__logo-link"
@@ -53,52 +54,16 @@
                 class="top-bar__logo"
               />
             </a>
-
-            <div class="dropdown">
-              <button class="dropdown__trigger">
-                <img
-                  src="./images/features/menu.svg"
-                  class="dropdown__trigger--menu"
-                  alt="menu"
-                />
-              </button>
-              <div class="dropdown__content">
-                <ul class="content">
-                  <li>
-                    <a
-                      href="#about-us"
-                      class="content__link"
-                    >
-                      About us
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#services"
-                      class="content__link"
-                    >
-                      Services
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#testimonials"
-                      class="content__link"
-                    >
-                      Testimonials
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="#contact-us"
-                      class="content__link"
-                    >
-                      Contact Us
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            <a
+              href="#menu"
+              lass="top-bar__menu"
+            >
+              <img
+                src="./images/features/menu.svg"
+                class="top-bar__menu--image"
+                alt="menu"
+              />
+            </a>
           </div>
 
           <nav class="top-bar__nav nav">
@@ -184,6 +149,57 @@
         </div>
       </div>
     </header>
+    <aside
+      class="page__menu menu"
+      id="menu"
+    >
+      <a
+        href="#"
+        class="menu__close"
+      >
+        <img
+          class="menu__close--image"
+          src="images/logo/close.svg"
+          alt="close"
+        />
+      </a>
+      <nav class="menu-nav">
+        <ul class="menu-nav__list">
+          <li class="menu-nav__item">
+            <a
+              href="#about-us"
+              class="menu-nav__link"
+            >
+              About us
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a
+              href="#services"
+              class="menu-nav__link"
+            >
+              Services
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a
+              href="#testimonials"
+              class="menu-nav__link"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a
+              href="#contact-us"
+              class="menu-nav__link"
+            >
+              Contact Us
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
     <main class="main">
       <section
         class="main__who-we-are"
@@ -500,18 +516,21 @@
               class="form__input"
               name="email"
               placeholder="Your @mail"
+              required
             />
             <input
               type="text"
               class="form__input"
               name="name"
               placeholder="Your name"
+              required
             />
             <input
               type="text"
               class="form__input"
               name="message"
               placeholder="Your message"
+              required
             />
             <button
               class="form__button"
@@ -547,17 +566,17 @@
           <p class="contact-us__name">our socials</p>
           <div class="contact-us__socials">
             <a
-              href="#"
+              href="https://www.facebook.com"
               class="socials__link socials__link--facebook"
               target="_blank"
             ></a>
             <a
-              href="#"
+              href="https://x.com"
               class="socials__link socials__link--twitter"
               target="_blank"
             ></a>
             <a
-              href="#"
+              href="https://www.instagram.com/"
               class="socials__link socials__link--instagram"
               target="_blank"
             ></a>

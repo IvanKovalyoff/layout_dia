@@ -4,10 +4,14 @@
   gap: 64px;
   justify-content: space-between;
   align-items: center;
-  padding-block: 128px;
+  padding-block: 72px;
   box-sizing: border-box;
 
   @include content-space-inline;
+
+  @include on-tablet {
+    padding-block: 128px;
+  }
 
   &__title {
     font-family: Poppins, sans-serif;
